@@ -1,0 +1,32 @@
+.reviews {
+  min-height: 950px;
+  padding-bottom: 15px;
+  &__wrapper {
+    margin-top: 15px;
+  }
+  &__item {
+    display: flex;
+    margin: 55px 0;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 65px;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__race {
+    margin: 20px 0;
+    color: #b3b3b3;
+  }
+  &__descr {
+    font-size: 16px;
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}

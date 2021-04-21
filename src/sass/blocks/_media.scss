@@ -1,0 +1,198 @@
+@media (max-width: 991px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .promo {
+    &__wrapper {
+      margin-top: 70px;
+    }
+  }
+
+  .carousel {
+    &__inner {
+      width: 600px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .catalog {
+    &__content {
+      justify-content: center;
+    }
+    &-item {
+      margin: 0 20px 20px 20px;
+    }
+  }
+
+  .modal {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    .hamburger {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      span {
+        margin-top: 2px;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $mainColor;
+      }
+    }
+    .header {
+      position: fixed;
+      top: 0px;
+      left: -50vw;
+      margin: 0;
+      width: 50%;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100vh;
+      background-color: rgba(0,0,0,.8);
+      transition: .5s all;
+      &_active {
+        left: 0px;
+      }
+    }
+    &__wrapper {
+      align-items: center;
+    }
+  }
+
+  .advantages {
+    &__items {
+      margin-top: 0px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-top: 40px;
+    }
+    &__header {
+      margin-top: 20px;
+    }
+    &__descr {
+      margin-top: 10px;
+    }
+  }
+
+  .carousel {
+    &__inner {
+      width: 410px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .promo {
+    min-height: 650px;
+    padding: 60px 0 20px 0;
+    .header {
+      &__logo {
+        width: 150px;
+      }
+      &__official {
+        font-size: 10px;
+        span {
+          font-size: 16px;
+        }
+      }
+      &__contacts {
+        align-items: center;
+      }
+      &__phone {
+        font-size: 16px;
+      }
+      .button_main {
+        width: 130px;
+      }
+    }
+    &__wrapper {
+      margin-top: 20px;
+    }
+    &__header {
+      font-size: 22px;
+    }
+    &__subheader {
+      display: none;
+    }
+    &__icons {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+      width: 310px;
+    }
+    &__icon {
+      margin-top: 30px;
+      font-size: 22px;
+    }
+  }
+
+  .consultation {
+    padding: 70px 0 50px 0;
+    .title {
+      font-size: 28px;
+      text-align: center;
+    }
+    &__descr {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .feed-form {
+      margin: 35px auto 0 auto;
+    }
+  }
+
+  .carousel {
+    &__inner {
+      width: 300px;
+    }
+  }
+
+  .catalog {
+    &__tab {
+      font-size: 10px;
+    }
+  }
+
+  .reviews {
+    &__item {
+      display: block;
+    }
+    &__icon {
+      margin: 0 auto;
+    }
+    &__name {
+      margin-top: 20px;
+      text-align: center;
+    }
+    &__race {
+      text-align: center;
+    }
+  }
+
+  .footer {
+    &__info {
+      width: 100%;
+    }
+  }
+
+  .modal {
+    min-height: 0;
+    width: calc(100%);
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+    .feed-form {
+      margin: 25px auto 0 auto;
+    }
+  }
+}
